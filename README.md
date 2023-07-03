@@ -84,7 +84,20 @@ E então foi criado o conjunto de daods e a tabela
 
 ![Captura de tela de 2023-07-03 11-13-26](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/fcf23f9f-8214-48a9-a414-727951c2efb0)
 
-** IMPORTANTE: O conjunto de dados deve estar na mesma região que o bucket para que op Big query possa transferir os dados.**
+**IMPORTANTE: O conjunto de dados deve estar na mesma região que o bucket para que op Big query possa transferir os dados.**
+
+Derpois criei uma planilha no Google Sheets e fui em *Dados >> conector de dados >> Conectar ao Bigquery*
+
+![Captura de tela de 2023-07-03 11-10-38](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/8310ccc1-b7bf-4063-9de2-fc3ec68d5690)
+
+Dai então eu escolho o *projeto >> Conunto de dados >> tabela*
+
+![Captura de tela de 2023-07-03 11-10-52](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/5ccbe4b1-1f74-4215-ae30-4740294cd6bd)
+
+**IMPORTANTE: A conta da GCP ultilizada é do mesmo e-mail onde criei o Google Shets**
+
+Dessa forma conseguir consluir o desfaio e ter o link do [Google Sheets](https://docs.google.com/spreadsheets/d/13ytaG80gcRyqe7MIRlNgr8GRj7XUGqaqqjaUx8HKEmE/edit?usp=sharing) com as informações pedidas.
+
 
 
 
