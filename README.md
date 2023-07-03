@@ -31,5 +31,6 @@ Porém no texto do desafio diz realizar aa extração das informações que cons
 
 ## Como eu resolvi
 
+Escrevi manualmente um arquivo em formato csv com algumas informações que consegui tirar da pagina e chamei de [testedados1.csv](https://github.com/HenriqueSantos0/DesafioBeAnalytic/blob/main/testedados1.csv).
 
 
