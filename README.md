@@ -33,4 +33,58 @@ Porém no texto do desafio diz realizar aa extração das informações que cons
 
 Escrevi manualmente um arquivo em formato csv com algumas informações que consegui tirar da pagina e chamei de [testedados1.csv](https://github.com/HenriqueSantos0/DesafioBeAnalytic/blob/main/testedados1.csv).
 
+Depois com o codigo [conveter.py](https://github.com/HenriqueSantos0/DesafioBeAnalytic/blob/main/converter.py) converti as informações de csv para parquet por se tratar de um formato de arquivo mais robusto e que ocupa menos espaço, obtendo assim o arquivo [tetedados1](https://github.com/HenriqueSantos0/DesafioBeAnalytic/blob/main/testedados1)
+
+Depois disso fui no console da GCP e criei um projheto com o Nome de *DesafioBeAnalytics*
+
+![Captura de tela de 2023-07-03 11-06-43](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/f861d5d4-fbbd-4db7-a929-4b552dd372e9)
+![Captura de tela de 2023-07-03 11-06-56](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/1ed6e6d6-9b74-4315-b0bd-205260b0b4ba)
+
+Então criei um Bucket no Google Cloud Storage para armazenar meu arquivo, seguindo a arquitetura já mensionada no inicio.
+
+![Captura de tela de 2023-07-03 11-07-14](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/0fab4bda-d6e3-433d-9600-9ea112307bf9)
+
+![Captura de tela de 2023-07-03 11-07-21](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/a80f71c8-7080-4983-a842-bb6f43bc32d6)
+
+Dei ao Bucket o nome de Steam_db
+
+![Captura de tela de 2023-07-03 11-08-06](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/5a6c85d7-333c-4105-8f24-826daa44c13c)
+
+É importante nesse momento observar a região em que o Bucket será criado, pois o Big query só vai conseguir ler arquivos da mesma região.
+
+![Captura de tela de 2023-07-03 11-08-15](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/c035e27c-484b-4e8a-be8b-10cb5e0d26c4)
+
+Com o Bucket Criado
+
+![Captura de tela de 2023-07-03 11-08-30](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/0471195a-f4b9-4a9b-a8ad-4f4a178cd71d)
+
+Fiz o upload do arquivo
+
+![Captura de tela de 2023-07-03 11-08-44](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/9894efae-573c-43ec-a6a4-9f6defaf8351)
+
+Então fui para o serviço do Big Query
+
+![Captura de tela de 2023-07-03 11-09-02](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/a256d10a-c015-43bf-a065-e397004dd1c7)
+
+![Captura de tela de 2023-07-03 11-09-08](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/624424c4-364e-4ef8-a966-366034786905)
+
+Cliquei em adicionar
+
+![Captura de tela de 2023-07-03 11-09-14](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/e4256fb5-ff65-4ab5-b176-d02ce6de3795)
+
+E busquei informações do Google Cloud Storage
+
+![Captura de tela de 2023-07-03 11-09-20](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/31420dc8-a2ce-48b0-8f55-85e501acf2f1)
+
+Preenchi com as informações nescessarias
+
+![Captura de tela de 2023-07-03 11-09-55](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/3b472c85-392c-475a-adf6-54369ee027c3)
+
+E então foi criado o conjunto de daods e a tabela
+
+![Captura de tela de 2023-07-03 11-13-26](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/fcf23f9f-8214-48a9-a414-727951c2efb0)
+
+** IMPORTANTE: O conjunto de dados deve estar na mesma região que o bucket para que op Big query possa transferir os dados.**
+
+
 
