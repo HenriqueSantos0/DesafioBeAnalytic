@@ -12,3 +12,14 @@ Para resolver esse problema eu pensei inicialmente em criar a arquitetura abaixo
 ###### *Essa arquitetura foi construida com o auxilio do [Excalidraw](https://excalidraw.com/#json=LHona4siCKr7fdWN9eZ0R,YQ31RtQY-k46EifE-siSDw).*
 
 O objetivo era construir um código em python, e implementa-lo no Google Cloud Function, que realizasse a raspagem da pagina e salvasse essas informações no Google Cloud Storage, então estando o Google Cloud Storage na Mesma Região de uma base de dados no Big Query, transferir os arquivos e por ultimo conectar esse dados ao Google Sheets.
+
+## Dificuldades encontradas
+Para realizar o Crawler incialmente tenti usar a biblioteca do **pandas**, mas retornava "**ERRO 403**", que é um erro de permissão negada.
+Então eu tentei ultilizar outra biblioteca python, **requests**, porém retornava o mesmo erro. Ai o proximo passo foi passar no argumento *headers* da requisição com o **requests** o *User-Agent*, porém sem sucesso.
+Diante disso imaginei que fosse o modo como essa bibliotecas funcionam, dai pensei em utilizar outra biblioteca python, o **selenium**, que costuma ser mais robusta pois simula os cliques na pagina, porém, apesar das diversas tentativas sempre tive como retorno o mesmo erro **ERRO 403**.
+Me coloquei a pesquisar mais a respeito do problema e decobrir que o site do StemaDb não permite Crawler ou Scrapoing na pagina.
+
+![Captura de tela de 2023-07-03 11-13-00](https://github.com/HenriqueSantos0/DesafioBeAnalytic/assets/89212899/36e4e675-c389-42a8-8eeb-b215f9ce43f8)
+
+
+
